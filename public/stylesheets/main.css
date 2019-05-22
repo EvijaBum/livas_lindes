@@ -1,0 +1,995 @@
+  @import url(https://fonts.googleapis.com/css?family=Raleway:300);
+  @import url(https://fonts.googleapis.com/css?family=Lusitana:400,700);
+
+
+  body.home { 
+   background-image: url(livalinde.jpg) ;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position:center;
+  background-color: white;
+  overflow-x: hidden;
+  height: 100vh;
+  }
+    /*navigation bar*/
+    .navbar-default{
+    display: block;
+    background: rgba(0,0,0,0.3);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 10px;
+  }
+
+  .nav.navbar-nav li a{
+    color: white;
+   text-transform: uppercase;
+   font-size: 16px;
+   text-align: center;
+   font-family: Arial, sans-serif;
+   border-bottom-color: black;
+  }
+  .nav.navbar-nav li a:hover {
+    border-bottom: 1px solid white;
+    text-decoration:none;
+    color: #bee7f4;
+    opacity: 0.75;
+    
+  }
+  .nav.navbar-nav li a:focus{
+    background-color: transparent;
+     text-decoration:none
+  }
+
+  nav,.message, .social{
+    animation: 0.8s fadein 0.5s forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadein{
+    100%{
+      opacity: 1;
+    }
+  }
+  
+/*social icons*/ 
+  .social{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1 150px;
+    margin-top: 20%;
+    }
+
+
+.social-media {
+  border-radius: 50%;
+  display: inline-block;
+  height: 70px;
+  margin: 0 20px 0 0;
+  position: relative;
+  width: 70px;
+}
+.social-media:last-of-type {
+  margin: 0;
+}
+.social-media::after, .social-media::before, .social-media svg {
+  bottom: 0;
+  display: inherit;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.social-media::after, .social-media::before {
+  content: '';
+}
+.social-media::after, .social-media svg {
+  border-radius: inherit;
+}
+.social-media svg {
+  height: 100%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  width: 100%;
+}
+
+.social-media::after {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2) inset;
+  height: calc(100% - 2px);
+  width: calc(100% - 2px);
+  z-index: -1;
+}
+.social-media::before {
+  color: rgba(0, 0, 0, 0.2);
+  font: 32px 'FontAwesome';
+  height: 32px;
+  line-height: 1em;
+  text-align: center;
+  transition: all 0.4s linear;
+  width: 32px;
+}
+
+.social-media:hover::before {
+  color: #212121;
+}
+.social-media.facebook::before {
+  content: '\f09a';
+}
+.social-media.twitter::before {
+  content: '\f099';
+}
+.social-media.instagram::before {
+  content: '\f16d';
+}
+.social-media.linkedin::before {
+  content: '\f0e1';
+}
+.social-media.youtube::before {
+  content: '\f16a';
+}
+
+    .message{
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      color: white;
+      flex: 2 2 200px;
+    }
+    .home h1{
+      font-family: 'Simonetta', cursive;
+      font-size: 55px;
+      font-weight: normal;
+      opacity: 0.9;
+     }
+    .home p{
+      font-family: 'Simonetta', cursive;
+      font-size: 27px;
+      opacity: 0.9;
+    }
+    
+    @media screen and (max-width: 600px){
+    .social{
+      margin-top:150px;
+      flex-direction:column;
+      }
+      .home h1{
+        font-size: 40px;
+      }
+      .home p{
+        font-size: 25px;
+      }
+    .message{
+      padding-top: 80px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      }
+    .social-media {
+      border-radius: 50%;
+      display: inline-block;
+      height: 60px;
+      margin: 0 20px 0 0;
+      position: relative;
+      width: 60px;
+    }
+   .navbar-default{
+      background: rgba(0,0,0,0.4);
+
+    }
+  }
+
+ /*================================================================*/
+ /* Page About me */
+ 
+  .about{
+    background-image: url(0M2A9808-3.jpg) ;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-color: #F6F6F6;
+    background-color: white;
+    overflow-x: hidden;
+    height: 100vh;
+    animation: 0.8s fadein 0.5s forwards;
+    opacity: 0;
+    }
+    
+  @keyframes fadein{
+    100%{
+      opacity: 1;
+    }
+  }
+
+  .aboutsection{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    height: 700px;
+  }
+  .intro{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    /*border-top: 1px white solid;*/
+    border-radius: 4px;
+    border-right: 1px white solid;
+     border-bottom: 1px white solid;
+    margin-top: 110px;
+  }
+
+  .pads{
+    justify-content:space-between;
+    flex: 1 2 250px;
+    margin: 15px;
+     font-size: 15px;
+    font-family: Arial,sans-serif;
+    text-align: center;
+    color: #262626;
+    font-weight: 500;
+  }
+    .pads p{
+       line-height: 24px;
+    }
+    
+  .caps{
+    font-size: 26px;
+    color: white;
+    animation: 0.8s fadein 0.5s forwards;
+    opacity: 0;
+    text-shadow: black 0.1em 0.1em 0.2em;
+  }
+ 
+  @keyframes fadein{
+    100%{
+      opacity: 1;
+    }
+  }
+
+  .education{
+     font-family: Arial,sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 10px;
+     color: black;
+     opacity: 0.8;
+     width: 100%;
+  }
+  
+    .education p{
+    color: white;
+    animation: 0.8s fadein 0.5s forwards;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    align-self: center;
+    font-family: Arial,sans-serif;
+    font-size:20px;
+    width: auto;
+
+  }
+  .education li{
+    height:60px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+  .education ul {
+    list-style-type: circle;
+  }
+ 
+@media only screen and (max-width: 600px) {
+   .about{
+    width: auto;
+    }
+}  
+   
+@media only screen and (max-width: 600px) {
+    .about{
+     background-size: auto auto;
+      background-position:top;
+      flex-basis: 100%;
+     
+    }
+    .aboutsection{
+       height: auto;
+    }
+      .education{
+         -webkit-margin-top: 70px;
+         -moz-margin-top: 100px;
+        justify-content:center;
+        font-size: 14px;
+      }
+      .education li{
+        height:70px;
+        padding: 0 2px 2px 0;
+      }
+    .titleedu{
+      text-align: right;
+    }
+    .pads{
+      margin-top: 15px;
+      font-size: 15px;
+      font-family: Arial, sans-serif;
+      letter-spacing: 0.5px;
+      line-height: 22px;
+    }
+    .caps{
+      font-size: 18px;
+    }
+    
+  }
+  
+  @media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+      .pads{
+      flex: 1 2 300px;
+       font-size:15px;
+        }
+        .caps{
+          font-size: 24px;
+        }
+         .education{
+        font-size: 15px;
+        margin-top:20px;
+        margin-bottom: 110px;
+       }
+       .aboutsection{
+        height: 700px;
+       }
+    }
+    @media screen 
+      and (min-device-width: 1200px) 
+      and (max-device-width: 1600px) 
+      and (-webkit-min-device-pixel-ratio: 1) { 
+              .pads{
+          flex: 1 2 300px;
+           font-size:15px;
+        }
+        .caps{
+          font-size: 24px;
+        }
+         .education{
+        font-size: 15px;
+        margin-top:20px;
+       }
+       .social3{
+         margin-top: 60px;
+         margin-right: 32px;
+       } 
+    }
+  
+  /*======================= PORTFOLIO ====================================*/
+ 
+  
+  .mywork {
+    background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+    min-height: 100vh;
+    padding-top:100px;
+    animation: 0.8s fadein 0.5s forwards;
+    opacity: 0;
+    }
+    
+    @keyframes fadein{
+        100%{
+          opacity: 1;
+        }
+      }
+
+  .portfolio{
+    background-color: #fff;
+    color: #35373a;
+    min-height: 800px;
+    max-height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    padding-top: 20px;
+  }
+  
+    .images img{
+      border-radius: 4px;
+    }
+  
+    .galleries{
+      display: flex;
+      flex-wrap:wrap;
+      justify-content:center;
+    }
+    .galleries div img {
+        display: block;
+        max-height: 350px;
+        width:400px;
+        align-self: center;
+        transition: transform .3s;
+    }
+    
+      .galleries div img:hover{
+      transform: scale(0.9);
+      }
+    
+     .shorttext{
+       text-align: center;
+       position: relative;
+        padding: 10px;
+        width: auto;
+        font-family: Arial, sans-serif;
+      }
+      
+      .images h2 {
+        font-size: 18px;
+        border: 1px solid #dbd9dd;
+        border-radius: 4px;
+        color: black;
+      }
+    
+      .galleries a, .mainpanel a{
+        text-decoration: none !important;
+        color: black;
+      }
+      .images, .imageslayout{
+        padding: 5px;
+      }
+ 
+      .social2{
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items: flex-end;
+        /*background-color: grey;*/
+        width:auto;
+        flex: 1 1 50px;
+      }
+
+/* ==================== MOBILDE VERSION PORTFOLIO ================ */    
+  
+  @media screen and (max-width: 600px) {
+     .galleries div img { 
+        max-height:230px;
+        width: 250px;
+      }
+      .mywork{
+        background: #F5F5F5;
+      }
+      .shorttext{
+        background-color: white;
+        opacity: 0.5;
+        color: black;
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+        }
+      }
+      
+    /* ======================== EVENTS - KIDS ================= */
+    
+    .sectionkids, .wedding {
+      background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+      min-height: 100vh;
+      padding: 15px 0;
+      animation: 0.8s fadein 0.5s forwards;
+      opacity: 0;
+     }
+    
+      @keyframes fadein{
+        100%{
+          opacity: 1;
+        }
+      }
+
+      .btn.btn-basic{
+               background: rgba(0,0,0,0.2);
+               margin:10px 0 10px 8px;
+               padding: 10px;
+               color: white;
+             }
+             .btn.btn-basic:hover{
+                background-color: lightgrey;
+                opacity: 0.6;
+                color:black;
+             }
+             
+      .mainpanel {
+          background-color: #fff;
+          color: #35373a;
+          min-height: 100vh;
+          border-radius: 10px;
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+          display: flex;
+          flex-wrap:wrap;
+          justify-content:center;
+          margin: 3px;
+          padding-top: 20px;
+      }
+      
+        .kidsevents, .lifestyle, #wedding{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          width: 100%;
+          
+        }
+        
+       .mainpanel div img{
+          display: flex;
+          flex-wrap: wrap;
+          height: 250px;
+          width: auto;
+        }
+        .imageslayout img {
+          border-radius: 4px;
+        }
+
+    /* ==== LIGHTBOX DESIGN ======= */
+    /* 1.Add to footer a js bagueete link to the file name acccording galleries what you wanna display */
+    
+      .lightbox img {
+          width: 100%;
+          margin-bottom: 30px;
+          transition: 0.2s ease-in-out;
+          box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+      }
+
+      .lightbox img:hover {
+          transform: scale(0.9);
+          box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+      }
+      .baguetteBox-button {
+          background-color: transparent !important;
+      }
+  
+   /* ============================== */
+
+@media(max-width: 768px) {
+    .sectionkids, .wedding {
+        padding: 0;
+    }
+
+   .kidsevents, #wedding {
+        border-radius: 0;
+    }
+    .mainpanel{
+       padding-top: 15px;
+    }
+     .mainpanel div img{
+          width: 260px;
+          height: auto;
+         }
+    
+      .imageslayout {
+        padding: 0;
+        margin: 0;
+      }
+  }
+
+/* ====================================================== */
+/* Section Portfolio -> Lifestyle events */
+
+   .sectionlifestyle{
+     background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+      min-height: 100vh;
+      padding: 15px 0;
+      animation: 0.8s fadein 0.5s forwards;
+      opacity: 0;
+    }
+    
+    @keyframes fadein{
+      100%{
+        opacity: 1;
+      }
+    }
+  /*=========================SECTION ROAD JOURNAL=======================================*/
+  
+  .roadjournal{
+   padding-top:100px;
+    background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+    height: 100vh;
+    overflow-x: hidden;
+    animation: 0.8s fadein 0.5s forwards;
+    opacity: 0;
+    }
+    
+    @keyframes fadein{
+      100%{
+        opacity: 1;
+      }
+    }
+    
+    /*=================== COMING SOON ==================== */
+    #comingsoon {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      height: 500px;
+     }
+    #comingsoon h1{
+      font-family: 'Simonetta', cursive;
+      font-size: 86px;
+      align-self: center;
+      padding: 80px;
+      border-radius: 25px;
+      color: white;
+      background-color: rgba(0, 153, 255, 0.3);
+    }
+    
+/* .sectionjournal{*/
+/*    background-color: #fff;*/
+/*    color: #35373a;*/
+/*    border-radius: 10px;*/
+/*    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);*/
+/* }*/
+/*   .blogitem{*/
+/*      margin: 15px;*/
+/*      text-align: center;*/
+/*    }*/
+/*    .blogitem img{*/
+/*      border-radius: 4px;*/
+/*    }*/
+/*    .blogs{*/
+/*      display: flex;*/
+/*      flex-wrap:wrap;*/
+/*      flex-direction: row;*/
+/*       justify-content:center;*/
+/*       margin: 15px;*/
+/*       padding-top: 50px;*/
+/*    }*/
+
+
+/*   .blogs div img { */
+/*      display: block;*/
+/*      max-height: 350px;*/
+/*      width: 100%;*/
+/*      align-self: center;*/
+/*      transition: transform .3s;*/
+/*    }*/
+    
+/*   .blogs div img:hover{*/
+/*      transform: scale(0.9);*/
+/*    }*/
+/*    .blogs a{*/
+/*      text-decoration: none !important;*/
+/*      color: black;*/
+/*    }*/
+ 
+/*  .shorttext{*/
+/*    font-family: Arial, sans-serif;*/
+/*    font-size: 18px;*/
+/*    margin: 12px;*/
+/*    text-align: center;*/
+/*    opacity: 0.7;*/
+/*  }*/
+/*    .shorttext a:hover{*/
+/*      color: grey;*/
+/*      opacity: 0.85;*/
+/*    }*/
+
+/*  .social2{*/
+/*    display:flex;*/
+/*    flex-wrap: wrap;*/
+/*    flex-direction:row;*/
+/*    justify-content: center;*/
+/*    margin-top: 40px;*/
+/*    width:auto;*/
+/*    flex: 1 1 100px;*/
+/*  }*/
+
+/* ====================== MOBILE VERSION ROAD YOURNAL =============== */
+
+/*  @media screen and (max-width: 600px) {*/
+/*     .gallery-image{*/
+/*       margin: 1px;*/
+
+/*    }*/
+/*    .roadjournal{*/
+/*      background: #F5F5F5;*/
+/*    }*/
+/*     .blogs div img { */
+/*      max-height:230px;*/
+/*    }*/
+/*  }*/
+  
+            /*=================== Road Journal section nr1 ================ */
+/*             .blog1{*/
+/*                background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);*/
+/*                min-height: 100vh;*/
+/*                padding: 15px 0;*/
+/*                animation: 0.8s fadein 0.5s forwards;*/
+/*                opacity: 0;*/
+/*             }*/
+/*                @keyframes fadein{*/
+/*                100%{*/
+/*                  opacity: 1;*/
+/*                  }*/
+/*                }*/
+          
+/*               .blogsection{*/
+/*                 height: auto;*/
+/*                 display:flex;*/
+/*                 flex-direction:column;*/
+/*                 background-color: #fff;*/
+/*                 color: #35373a;*/
+/*                 min-height: 100vh;*/
+/*                 border-radius: 10px;*/
+/*                 box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);*/
+/*               }*/
+/*             .blogsection h1{*/
+/*               text-align: center;*/
+/*             }*/
+/*              .blogsection p{*/
+/*                text-align:center;*/
+/*                padding: 15px;*/
+/*              }*/
+/*            .blogsection img{*/
+/*              display: block;*/
+/*              height: auto;*/
+/*              width: 50%;*/
+/*              align-self: center;*/
+/*            }*/
+    
+  /*==========================Contact section ========================================*/
+
+  body.contact{
+      font-family: Arial, sans-serif;
+      background: url(contact.jpg);
+      background-repeat:no-repeat;
+      background-size: cover;
+      background-position:top;
+      background-color: white;
+      overflow-x: hidden;
+      height: 100vh;
+    }
+    #paragraph, .contact{
+      animation: 0.8s fadein 0.5s forwards;
+      opacity: 0;
+    }
+    
+    @keyframes fadein{
+      100%{
+        opacity: 1;
+      }
+    }
+    
+  .contact1{
+      padding-top:100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: auto;
+      
+    }
+    .inner {
+      padding-top: 20px;
+    }
+      #paragraph{
+          display: flex;
+          flex:1 1 140px;
+          flex-direction: row;
+          font-family:Arial,sans-serif;
+          width:700px;
+          margin: 20px;
+          height: 100px;
+        }
+
+      #paragraph p{
+          align-self: center;
+          text-align: center;
+          padding: 20px;
+          font-size: 18px;
+          color: black;
+          opacity: 0.7;
+        }
+
+  /*==========CONTACT FORM==============*/
+
+    /* Input Styles */
+    
+      .form{
+        font-family: Arial, sans-serif;
+        width: 100%;
+        padding:10px;
+        background: white;
+        opacity: 0.7;
+        border-radius: 4px;
+        border:1px solid rgba(0, 0, 0, 0.5);
+        margin-bottom:20px;
+        color:#262626!important;
+        font-size:15px;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        transition: all 0.2s;
+      }
+    
+      .form:hover{
+        border:1px solid #3399ff;
+      }
+    
+      .form:focus{
+        color: white;
+        outline: none;
+        border:1px solid rgb(51, 153, 255);
+      }
+    
+     .textarea {
+          height: 200px;
+          max-width: 100%;
+          border: 1px solid rgba(0, 0, 0, 0.5);
+        }
+  
+      
+    /* Generic Button Styles */
+    
+      .button{
+        padding:8px 12px;
+        background:grey;
+        display: block;
+        width:120px;
+        margin:20px 0 0px 0;
+        border-radius:3px;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        text-align:center;
+        font-size:0.8em;
+        box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+        -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+        -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+      }
+    
+      .button:hover{
+        background: grey;
+        color:white;
+      }
+    
+    /* Send Button Styles */
+    
+      .form-btn{
+         font-family: Arial,sans-serif;
+        width:180px;
+        display: block;
+        height: auto;
+        padding:15px;
+        color:#fff;
+        background: grey;
+        border:none;
+        border-radius:3px;
+        outline: none;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        transition: all 0.3s;
+        margin:auto;
+        box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+        -moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+        -webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+      }
+    
+      .form-btn:hover{
+        background:#A5A5A5 ;
+        color: #F4F4F4;
+        border:none;
+      }
+    
+      .form-btn:active{
+        opacity: 0.9;
+      }
+      .social4{
+         display:flex;
+        flex-wrap: wrap;
+        flex-direction:row;
+        justify-content: center;
+        width:auto;
+        flex: 1 1 50px;
+        margin-top:5px;
+        margin-bottom:20px;
+       
+      }
+      .social4 .items-social {
+        margin: 10px;
+      }
+      
+ /* ============= FLASH MESSAGES AFTER SUBMITING MESSAGE ========= */
+      .messages{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        height: 100px;
+      }
+        .alert-danger{
+          width: 250px;
+          height: auto;
+          align-self: center;
+          color: red;
+        }
+        .alert-success{
+          width: 250px;
+          align-self: center;
+          height: auto;
+          color: green;
+        
+        }
+
+/* ============ MOBILE VERSION =============== */
+
+    @media screen and (max-width: 600px){    
+      body.contact{
+        background-size: auto auto;
+        background-position: top left;
+        flex-basis: 100%;
+      }
+      .contact1{
+          padding-top:80px;
+      }
+       #paragraph{
+          width:300px;
+          margin: 20px;
+          height: 100px;
+        }
+
+      #paragraph p{
+        padding: 20px;
+        font-size: 15px;
+      }
+      
+      .social4{
+        margin-bottom:20px;
+      }
+      
+  }
+    
+/* ========= FOOTER ========= */
+  .footer {
+    padding-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+    background-color: transparent;
+    text-align: center;
+    line-height: 30px;
+    opacity: 0.8;
+    /*background-color: green;*/
+   
+}
+  .fottext{
+     flex: 1 100%;
+    justify-content:center;
+    flex-direction:column;
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    color: black;
+  }
+
+ 
+  @media only screen and (min-width: 1382px) {
+   .footer{
+      margin-top: 100px;
+    }
+  }
+  
+  /*==========================================================*/
+ /*SCROLLER */ 
+ 
+  /* width */
+  ::-webkit-scrollbar {
+      width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+      background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+  }
