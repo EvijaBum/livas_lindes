@@ -9,7 +9,7 @@ var express             = require("express"),
     flash               = require("connect-flash");
 
 
-var indexRoutes = require("./routes/index")
+var indexRoutes = require("./routes/index");
 
 
 // mongoose.connect("mongodb://localhost:27017/liva_linde", {useNewUrlParser: true});
@@ -47,6 +47,6 @@ app.use(function(req, res, next){
 
 app.use("/", indexRoutes);
 
-app.listen(process.env.PORT, process.env.IP, function(){
+app.listen(3000, function(){
    console.log("BUNNY JUMPS!");
 });
