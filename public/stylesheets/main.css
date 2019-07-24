@@ -238,8 +238,8 @@
     animation: 0.8s fadein 0.5s forwards;
     opacity: 0;
     text-shadow: black 0.1em 0.1em 0.2em;
-	  height 100px;
-	  background-color: yellow;
+height 100px;
+	  /* background-color: yellow; */
   }
  
   @keyframes fadein{
@@ -253,23 +253,15 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding-top: 30px;
-    padding-bottom: 10px;
+align-items: flex-end;
+    /* padding-top: 30px;
+    padding-bottom: 10px; */
      color: black;
      opacity: 0.8;
      width: 100%;
   }
   
-    .education p{
-    color: white;
-    animation: 0.8s fadein 0.5s forwards;
-    text-shadow: black 0.1em 0.1em 0.2em;
-    align-self: center;
-    font-family: Arial,sans-serif;
-    font-size:20px;
-    width: auto;
 
-  }
   .education li{
     height:60px;
     margin: 0;
